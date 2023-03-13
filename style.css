@@ -1,0 +1,254 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Righteous&family=Sarala:wght@400;700&display=swap');
+
+* {
+    margin: 0px;
+    padding: 0px;
+    font-size: 100%;
+    box-sizing: border-box;
+    text-decoration: none;
+    
+}
+
+body {
+    background: linear-gradient(90deg, #45744C 1.22%, #45744C 1.23%, #45744C 1.24%, #22B63D 98.97%);
+}
+
+.cabecalho {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 15px;
+    width: 100%;
+}
+
+.logo {
+    padding: 15px;
+}
+
+.menu {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 70px;
+}
+
+.menu-item {
+    font-family: 'Sarala', sans-serif;
+    font-weight: bold;
+    font-size: 14px;
+    color: #F8FFE5;
+}
+
+.menu-item:hover {
+    background-color: #752752;
+    padding: 8px;
+    border-radius: 10px;
+    transition-duration: 0.5s;
+}
+
+.conteudo {
+    border-top: 1px solid #56203da8; 
+    margin-bottom: 70px;
+}
+
+.conteudo-principal {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    align-content: center;   
+    padding-left: 15px;
+
+}
+
+.cp-escrito {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.cp-titulo {
+    font-family: 'Righteous', cursive;
+    font-weight: 400;
+    font-size: 50px;
+    color: #F8FFE5;
+}
+
+.cp-subtitulo {
+    font-family: 'Sarala', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    color: #F8FFE5;;
+}
+
+.cp-imagem {
+    width: 40%;
+}
+
+.cp-botao {
+    font-family: 'Sarala', sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+    text-align: center;
+    background-color: #56203D;
+    color: #D5F2E3;
+    height: 52px;
+    width: 160px;
+    border: none;
+    border-radius: 20px;
+    box-shadow: 4px 5px 4px rgba(0, 0, 0, 0.15);
+}
+
+.cp-botao:hover {
+    background-color: #752752;
+    color: #D5F2E3;
+    transition-duration: 0.5s;
+}
+
+.conteudo-secundario {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+}
+
+.cs-titulo {
+    font-family: 'Righteous', cursive;
+    color: #F8FFE5;
+    font-weight: 400;
+    font-size: 25px;
+    align-items: center;
+    align-content: center;
+    border-top: 1px solid #56203da8;  
+    padding-top: 40px;  
+}
+
+.cs-lista {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    font-family: 'Sarala', sans-serif;
+    font-weight: normal;
+    font-size: 14px;
+    color: #F8FFE5;
+}
+
+strong {
+    color: #752752;
+}
+
+.rodape {
+    background-color: #56203D;
+    text-align: center;
+    color: #D5F2E3;
+    padding: 3px;
+    font-family: 'Righteous', cursive;
+    font-size: 12px;
+}
+
+@media screen and (max-width:750px) {
+    .cabecalho {
+        display: flex;
+        flex-direction: column;
+    }   
+    
+    .menu {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 25px;
+    }
+
+    .conteudo-principal {
+        display: flex;
+        flex-direction: column; 
+        text-align: center;
+        margin: 20px;
+        padding: 30px;
+    }
+
+    .cp-imagem {
+        width: 50%;
+        margin: 20px 0px -30px;
+    }
+    
+    .cp-botao {
+        width: 50%;
+        margin: auto;
+    }
+    
+}
+
+@media screen and (max-width:380px) {
+    .cabecalho {
+        display: flex;
+        flex-direction: column;
+    }   
+    
+    .menu {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 15px;
+    }
+    
+    .menu-item {
+        font-size: 12px;
+    }
+
+    .conteudo-principal {
+        display: flex;
+        flex-direction: column; 
+        text-align: center;
+        margin: 20px;
+        padding: 30px;
+    }
+
+    .cp-imagem {
+        width: 100%;
+        margin: 20px 0px -30px;
+    }
+    
+    .cp-botao {
+        width: 65%;
+        margin: auto;
+    }
+
+    .conteudo-secundario {
+        display: block;
+        flex-direction: column;
+        gap: 30px;
+        padding: 5px;        
+    }
+
+    .cs-titulo {
+        text-align: center;
+        padding: 25px;
+    }
+
+    .cs-lista {
+        box-sizing: border-box;
+        text-align: left;
+        padding: 50px;
+        font-size: 21px; 
+        margin-left: 15px; 
+        list-style-position: inside;   
+    }
+
+
+}
+
+@media screen and (max-width:425px) {
+    .cs-lista {
+        box-sizing: border-box;
+        text-align: left;
+        padding: 50px;
+        font-size: 23px; 
+        margin-left: 15px; 
+        list-style-position: inside;   
+    }
+}

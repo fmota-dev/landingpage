@@ -1,5 +1,22 @@
-# landingpage
- Projeto de landing page responsiva
+<p align="center">
+  <img src=".github/landingpage.PNG" alt="Demonstração do Projeto" width="100%" />
+</p>
 
- Para visualizar o site <a href="https://fmota-dev.github.io/projeto-landingpage/" target="_blank"> clique aqui!</a>
- 
+
+## 🖥️ Projeto 
+Esse é um projeto Web Reponsivo de uma Landing Page.
+
+## 🚀 Tecnologias 
+Esse projeto foi desenvolvido com base nos videos da Rafaella Ballerini 
+
+- HTML
+- CSS
+
+
+## ⭐ Créditos
+Você pode visualizar o canal do youtube dela atráves
+[desse link](https://www.youtube.com/user/RafaellaBallerini). 
+
+
+
+
